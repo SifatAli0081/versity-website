@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-image: linear-gradient(rgba(4,9,30,.7),rgba(4,9,30,.7)),url(image/banner.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 80vh;
+    width: 100%;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 8px 12px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav img {
+    width: 150px; 
+    padding: 5px 10px;
+    margin: 10px 20px 0 0;
+}
+.nav-links{
+    flex: 1 ;
+    text-align: right;
+    margin: 10px 20px 0 0;
+}
+.nav-links ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    padding: 5px 10px;
+    
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-style: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: 0;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+   width: 100%;
+}
+
+
+.text-box{
+    position:absolute;
+    text-align: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+h1{
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+p{
+   font-size: 15px;
+   margin: 10px 0px 40px;
+}
+.header-btn{
+   background-color: transparent;
+   text-decoration: none;
+   color: white;
+   border: 1px solid white;
+   padding: 12px 34px;
+   display: inline-block;
+   cursor: pointer;
+}
+.header-btn:hover{
+    border: 1px solid red;
+    background: red;
+    transition: 0.5s;
+}
+
+/*---------course--------------*/
+
+.course{
+   margin: 0 auto;
+   width: 80%;
+   text-align: center;
+   margin-top: 100px ;
+}
+.titel{
+    font-style: 36px;
+    font-weight: 600;
+}
+.sub-titel{
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px;
+    line-height: 22px;
+
+}
+.course-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+h3{
+    text-align: center; 
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col{
+    background-color: #fff3f3;
+    padding: 20px 12px;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    flex-basis: 32%;
+    transition: .5s;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0.2);
+}
+
+/*---------campuse--------------*/
+
+.campuse{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+}
+.campuse-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.campuse-col{
+    padding: 20px 10px;
+    margin-bottom: 5%;
+    flex-basis: 35%;
+}
+.campuse-col img{
+    width: 450px;
+    border-radius: 10px;
+}
+
+/*---------facility--------------*/
+
+.Facility{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+}
+.Facility-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+   
+}
+.Facility-col{
+    padding: 12px 12px;
+    margin-bottom: 5%;
+    flex-basis: 32%;
+
+}
+.Facility-col img{
+    height: 350px;
+    width: 450px;
+    border-radius: 10px;
+}
+.fac-text{
+   float: left;
+   text-align:left;
+   margin-top: 10 px;
+}
+.fac-text h4{
+   font-size: 25px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+/*---------reviwe--------------*/
+
+.review{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+}
+.review-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+
+}
+.review-col {
+    background-color: #fff3f3;
+    padding: 20px 12px;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    flex-basis: 40%;
+    
+}
+.review-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.user{
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    /* padding: 10px 0 0 10px; */
+}
+.comment {
+   text-align: left;
+   
+   margin: 0 0 0 5px;
+   float: right;
+   
+}
+.comment p{
+   padding: 0px 0px 0px 10px;
+}
+.comment h3{
+    float: left;
+}
+
+/*---------contact--------------*/
+
+.contact{
+    background-image: linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)),
+    url(image/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 40vh;
+    width: 80%;
+    position: relative;
+    
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+}
+.contact-box {
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.contact-btn {
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.contact-btn:hover {
+    border: 1px solid red;
+    background: red;
+    transition: 0.5s;
+    
+}
+
+/*---------about--------------*/
+
+.about {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 100px;
+}  
+.about-links{
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about-links ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    padding: 5px 10px;
+}
+.about-links ul li a {
+    color: red;
+    text-decoration: none;
+    font-style: 13px;
+}
+
+.about-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    color: black;
+    display: block;
+    margin: 0;
+    transition: 0.5s;
+}
+.about-links ul li:hover::after {
+    width: 100%;
+}
+
