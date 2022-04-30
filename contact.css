@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato',sans-serif;
 }
 
 .header {
@@ -81,7 +82,80 @@ h1 {
 
 .map{
     margin: 0 auto;
+    margin-bottom: 20px;
     width: 80%;
     text-align: center;
     margin-top: 100px;
+}
+
+
+/*---------about--------------*/
+.contact {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.row-1{
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+    margin-top: 100px;
+}
+.row-1 i{
+    color: red;
+    padding-top: 10px;
+}
+.row-2 {
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+    margin-top: 100px;
+}
+.row-2 i{
+    color: red;
+    padding-top: 10px;
+}
+
+/*---------about--------------*/
+
+.about {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.about-links {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-links ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    padding: 5px 10px;
+}
+
+.about-links ul li a {
+    color: red;
+    text-decoration: none;
+    font-style: 13px;
+}
+
+.about-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    color: black;
+    display: block;
+    margin: 0;
+    transition: 0.5s;
+}
+
+.about-links ul li:hover::after {
+    width: 100%;
 }

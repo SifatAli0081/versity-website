@@ -232,9 +232,9 @@ h3{
    float: right;
    
 }
-.comment p{
-   /* padding: 0px 0px 0px 10px; */
-}
+/* .comment p
+    padding: 0px 0px 0px 10px; 
+} */
 .comment h3{
     float: left;
 }
