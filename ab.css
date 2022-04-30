@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato',sans-serif;
 }
 
 .header {
@@ -100,6 +101,7 @@ h1 {
     width: 70%;
     text-align: center;
     margin-top: 140px;
+
 }
 
 .main-row {
@@ -139,8 +141,7 @@ h1 {
     color:white;
 }
 /*---------about--------------*/
-
-/* .about {
+ .about {
     margin: 0 auto;
     width: 80%;
     text-align: center;
@@ -176,20 +177,24 @@ h1 {
     margin: 0;
     transition: 0.5s;
 }
-
-.about-links ul li:hover::after {
-    width: 100%;
-} */
-
-.about-us{
+ .about-us {
     width: 80%;
-    margin:0 auto;
+    margin: 0 auto;
     padding: 80px 0 50px 0;
 }
-.about-col{
+    
+.about-links ul li:hover::after {
+        width: 100%;
+    }
+.about-links ul li:hover::after {
+    width: 100%;
+} .about-col {
     flex-basis: 48%;
     padding: 30px 2px;
 }
-.about-col img{
+
+.about-col img {
     width: 100%;
 }
+
+
