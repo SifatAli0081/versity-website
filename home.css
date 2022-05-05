@@ -284,7 +284,6 @@ h3{
 }
 
 /*---------about--------------*/
-
 .about {
     margin: 0 auto;
     width: 80%;
@@ -302,22 +301,22 @@ h3{
     position: relative;
     padding: 5px 10px;
 }
-.about-links ul li a {
-    color: red;
+.about-links ul li a{
+    color:red;
     text-decoration: none;
     font-style: 13px;
 }
-
-.about-links ul li::after {
+.about-links ul li a::after {
     content: '';
     width: 0%;
+    color:red;
     height: 2px;
-    color: black;
     display: block;
     margin: 0;
     transition: 0.5s;
 }
-.about-links ul li:hover::after {
+.about-links ul li a:hover::after {
     width: 100%;
+    color: black;
 }
 

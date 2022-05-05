@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    background-image: linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url(image/background.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
+    width: 100%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 8px 12px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav img {
+    width: 150px;
+    padding: 5px 10px;
+    margin: 10px 20px 0 0;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    margin: 10px 20px 0 0;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    padding: 5px 10px;
+
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-style: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: 0;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+
+.text-box {
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 5px;
+    margin-top: 100px;
+}
+
+.map {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 80%;
+    text-align: center;
+    margin-top: 100px;
+}
+/* ------------BLOG -----------*/
+.blog {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    margin-top: 140px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.col-1{
+    text-align: left;
+    margin-right: 120px;
+    justify-content: left;
+}
+.col-1 .text-area{
+    text-align: left;
+    width: 750px;
+}
+.col-2{
+    align: left;
+}
+.col-2 li {
+    margin: 5px;
+    padding: 5px 0 5px 0;
+    border: 1px solid white;
+}
+/*---------about--------------*/
+.about {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 100px;
+}
+.sub-titel{
+    margin-bottom: 20px;
+}
+.about-links {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-links ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    padding: 5px 10px;
+}
+
+.about-links ul li a {
+    color: red;
+    text-decoration: none;
+    font-style: 13px;
+}
+
+.about-links ul li a::after {
+    content: '';
+    width: 0%;
+    color: red;
+    height: 2px;
+    display: block;
+    margin: 0;
+    transition: 0.5s;
+}
+
+.about-links ul li a:hover::after {
+    width: 100%;
+    color: black;
+}

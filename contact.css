@@ -111,6 +111,9 @@ h1 {
     margin-top: 20px;
     box-sizing: 40px 80px 40px 80px;
 }
+.col-2 .ul {
+    align: left;
+}
 .col-2 .from .input{
     height: 40px;
     width:80px;
@@ -132,14 +135,15 @@ h1 {
     color: white;
 }
 /*---------about--------------*/
-
 .about {
     margin: 0 auto;
     width: 80%;
     text-align: center;
     margin-top: 100px;
 }
-
+.sub-titel {
+    margin-bottom: 20px;
+}
 .about-links {
     flex: 1;
     text-align: center;
@@ -159,16 +163,17 @@ h1 {
     font-style: 13px;
 }
 
-.about-links ul li::after {
+.about-links ul li a::after {
     content: '';
     width: 0%;
+    color: red;
     height: 2px;
-    color: black;
     display: block;
     margin: 0;
     transition: 0.5s;
 }
 
-.about-links ul li:hover::after {
+.about-links ul li a:hover::after {
     width: 100%;
+    color: black;
 }

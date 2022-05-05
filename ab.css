@@ -141,18 +141,19 @@ h1 {
     color:white;
 }
 /*---------about--------------*/
- .about {
+.about {
     margin: 0 auto;
     width: 80%;
     text-align: center;
     margin-top: 100px;
 }
-
+.sub-titel {
+    margin-bottom: 20px;
+}
 .about-links {
     flex: 1;
     text-align: center;
-    margin: 20px 0 20px 0;
-    
+    margin-bottom: 20px;
 }
 
 .about-links ul li {
@@ -168,33 +169,18 @@ h1 {
     font-style: 13px;
 }
 
-.about-links ul li::after {
+.about-links ul li a::after {
     content: '';
     width: 0%;
+    color: red;
     height: 2px;
-    color: black;
     display: block;
     margin: 0;
     transition: 0.5s;
 }
- .about-us {
-    width: 80%;
-    margin: 0 auto;
-    padding: 80px 0 50px 0;
-}
-    
-.about-links ul li:hover::after {
-        width: 100%;
-    }
-.about-links ul li:hover::after {
-    width: 100%;
-} .about-col {
-    flex-basis: 48%;
-    padding: 30px 2px;
-}
 
-.about-col img {
+.about-links ul li a:hover::after {
     width: 100%;
+    color: black;
 }
-
 
